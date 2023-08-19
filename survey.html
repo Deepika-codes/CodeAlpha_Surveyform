@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,700&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="vendors/css/grid.css">
+  <link rel="stylesheet" href="vendors/css/normalize.css">
+</head>
+
+<body>
+  <div class="contact-form">
+
+    <form id="regForm" action="#">
+
+      <div class="row tab">
+        <div class="col span_1_of_3">
+          <label>Name:</label>
+        </div>
+        <div class="col span_2_of_3">
+          <input type="text" id="name" name="name"><br><br>
+        </div>
+      </div>
+
+      <div class="row tab">
+        <div class="col span_1_of_3">
+          <label>Email:</label>
+        </div>
+        <div class="col span_2_of_3">
+          <input type="email" id="email" name="email"><br><br>
+        </div>
+      </div>
+
+      <div class="row tab">
+        <div class="col span_1_of_3">
+          <label>Age:</label>
+        </div>
+        <div class="col span_2_of_3">
+          <input type="number" id="age" name="age"><br><br>
+        </div>
+      </div>
+
+      <div class="row tab">
+        <div class="col span_1_of_3">
+          <label>Gender:</label>
+        </div>
+        <div class="col span_2_of_3">
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </div>
+      </div>
+
+      <div class="row tab">
+        <div class="col span_1_of_3">
+          <label>Interests:</label>
+        </div>
+        <div class="col span_2_of_3">
+          <select id="Interests" name="interest">
+            <option value="web">Web Development</option>
+            <option value="full">Full Stack Developent</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </div>
+      </div>
+      <div class="row tab">
+        <div class="col span_1_of_3">
+            <label>Drop us a query</label>
+        </div>
+        <div class="col span_2_of_3 ">
+            <textarea name="text" id="ts" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+          <div class="row tab">
+         <input type="submit" value="Submit">
+        </div>
+      <div style="text-align:center; margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:left;">
+          <input class="btn col" type="button" id="prevBtn" onclick="nextPrev(-1)" value="Previous"></div>
+            <div style="float:right;">
+          <input class="btn" type="button" id="nextBtn" onclick="nextPrev(1)" value="Next">
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="survey.js"></script>
+</body>
+</html>
